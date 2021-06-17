@@ -1,0 +1,14 @@
+<mat-card>
+  <mat-card-title>
+    {{notes.titulo}}
+  </mat-card-title>
+  <mat-card-content>
+    {{notes.content}}
+  </mat-card-content>
+  <mat-card-footer>
+    <mat-chip-list aria-label="Fish selection">
+      <mat-chip>{{notes.flags[0]}}</mat-chip>
+      <mat-chip *ngIf="notes.flags[1]" color="primary" selected>{{notes.flags[1]}}</mat-chip>
+    </mat-chip-list>
+  </mat-card-footer>
+</mat-card>
