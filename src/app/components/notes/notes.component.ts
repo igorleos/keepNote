@@ -20,7 +20,9 @@ export class NotesComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.notes.titulo)
+  }
+  passingNote(note:NotesModel):void {
+    console.log(note);
   }
 
 }

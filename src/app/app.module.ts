@@ -17,6 +17,8 @@ import { MatListModule } from '@angular/material/list';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { CardComponent } from './components/card/card.component';
 import { NotesComponent } from './components/notes/notes.component';
+import { SobrePageComponent } from './components/sobre-page/sobre-page.component';
+import { NotePageComponent } from './components/note-page/note-page.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { NotesComponent } from './components/notes/notes.component';
     MenuTemplateComponent,
     HomePageComponent,
     CardComponent,
-    NotesComponent
+    NotesComponent,
+    SobrePageComponent,
+    NotePageComponent
 
   ],
   imports: [
