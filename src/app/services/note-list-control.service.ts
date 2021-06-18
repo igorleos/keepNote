@@ -6,7 +6,7 @@ import { NotesModel } from '../components/notes-model';
 })
 export class NoteListControlService {
   public listaDeNotas: NotesModel[]=[];
-
+  public curNote: NotesModel|undefined;
   constructor() {
     let nota1: NotesModel= new NotesModel;
 
@@ -32,9 +32,13 @@ export class NoteListControlService {
     return this.listaDeNotas;
    }
    public send(note:NotesModel):void{
-    let curNote=new NotesModel;
-    curNote=note;
+    this.curNote=new NotesModel;
+    this.curNote=note;
 
    }
+   public getNote():NotesModel|undefined{
+     return this.curNote;
+   }
+
 
 }
