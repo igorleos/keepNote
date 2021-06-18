@@ -9,6 +9,8 @@ import { NotesModel } from '../notes-model';
 })
 export class NotesComponent implements OnInit {
 
+  @Input() public index:number|undefined;
+
   @Input() public notes: NotesModel = new NotesModel();
 
 
@@ -24,6 +26,9 @@ export class NotesComponent implements OnInit {
   }
   passingNote(note:NotesModel):void {
     this.notesService.send(note);
+  }
+  passingIndex(index:number|undefined):void {
+    this.notesService.sendIndex(index);
   }
 
 }

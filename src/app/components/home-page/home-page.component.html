@@ -1,11 +1,11 @@
 <div class="mae">
 
   <div *ngFor="let item of listaDeNotas;let index=index ">
-    <app-notes *ngIf="index%2==0" [notes]="item">  </app-notes>
+    <app-notes *ngIf="index%2==0" [index]="index" [notes]="item" >  </app-notes>
   </div>
 
   <div *ngFor="let item of listaDeNotas;let index=index ">
-    <app-notes *ngIf="index%2==1" [notes]="item">  </app-notes>
+    <app-notes *ngIf="index%2==1" [index]="index" [notes]="item">   </app-notes>
   </div>
 
 </div>

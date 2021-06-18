@@ -1,4 +1,7 @@
-<mat-card routerLink='/notePage' (click)="passingNote(notes)">
+<mat-card routerLink='/notePage' (click)="passingNote(notes)"
+(click)="passingIndex(index)"
+
+>
   <mat-card-title>
     {{notes.titulo}}
   </mat-card-title>

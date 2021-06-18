@@ -1,21 +1,32 @@
-import { Component } from '@angular/core';
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { Observable } from 'rxjs';
-import { map, shareReplay } from 'rxjs/operators';
+import { Component, Input, OnInit } from '@angular/core';
+import { NoteListControlService } from 'src/app/services/note-list-control.service';
+import { NotesModel } from '../notes-model';
 
 @Component({
   selector: 'app-footer-menu-template',
   templateUrl: './footer-menu-template.component.html',
   styleUrls: ['./footer-menu-template.component.css']
 })
-export class FooterMenuTemplateComponent {
+export class FooterMenuTemplateComponent implements OnInit {
+  @Input() public notes: NotesModel = new NotesModel();
+  public listaDeNotas: NotesModel[]|undefined;
 
-  isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
-    .pipe(
-      map(result => result.matches),
-      shareReplay()
-    );
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  constructor(public notesService:NoteListControlService ) {
+
+
+   }
+
+  ngOnInit(): void {
+
+    this.listaDeNotas =this.notesService.listaDeNotas;
+
+
+  }
+  passingNote(note:NotesModel):void {
+    this.notesService.send(note);
+  }
+
+
 
 }

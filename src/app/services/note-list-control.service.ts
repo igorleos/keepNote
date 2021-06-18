@@ -7,6 +7,9 @@ import { NotesModel } from '../components/notes-model';
 export class NoteListControlService {
   public listaDeNotas: NotesModel[]=[];
   public curNote: NotesModel|undefined;
+  public index: number|undefined;
+
+
   constructor() {
     let nota1: NotesModel= new NotesModel;
 
@@ -36,9 +39,16 @@ export class NoteListControlService {
     this.curNote=note;
 
    }
+   public sendIndex(index:number|undefined):void{
+    this.index=index;
+
+   }
    public getNote():NotesModel|undefined{
      return this.curNote;
    }
+   public getIndex():number|undefined{
+    return this.index;
+  }
 
 
 }

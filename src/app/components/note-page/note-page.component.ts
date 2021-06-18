@@ -8,12 +8,20 @@ import { NotesModel } from '../notes-model';
   styleUrls: ['./note-page.component.css']
 })
 export class NotePageComponent implements OnInit {
-  public curNote:NotesModel|undefined;
-  constructor(public notesService:NoteListControlService) { }
+  public listaDeNotas: NotesModel[];
+
+  public index:number;
+  constructor(public notesService:NoteListControlService) {
+    this.listaDeNotas = [];
+    this.index=Number(this.notesService.getIndex());
+    console.log(this.index);
+
+   }
 
   ngOnInit(): void {
-    this.curNote=this.notesService.getNote();
-    
+    this.listaDeNotas=this.notesService.listaDeNotas;
+
+
   }
 
 }

@@ -1,1 +1,5 @@
-<div>{{curNote?.titulo}}</div>
+<div>
+  <input class="titulo" matInput placeholder="Título" [value]="listaDeNotas[index]?.titulo">
+  <input class="titulo" matInput placeholder="Nota" [value]="listaDeNotas[index]?.content">
+
+</div>
