@@ -11,27 +11,24 @@
 }
 
 .mat-toolbar.mat-primary {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-
-}
-/* edit */
-.mat-toolbar{
-
-  box-sizing: border-box;
-
-}
-input{
-  background: transparent;
-  border:none;
-
-}
-.rightset{
   display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0.4;
+}
+
+.footerset{
+  display: flex;
+  max-width: 100%;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
 
+
+}
+.addButton mat-icon{
+  font-size: 40px;
+  margin-right: 2px;
 
 }

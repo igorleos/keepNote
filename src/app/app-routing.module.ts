@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FooterMenuTemplateComponent } from './components/footer-menu-template/footer-menu-template.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { MenuTemplateComponent } from './components/menu-template/menu-template.component';
 import { NotePageComponent } from './components/note-page/note-page.component';
@@ -14,7 +15,11 @@ const routes: Routes = [
       {
         path:'',
         component:HomePageComponent,
+        
+
       },
+
+
       {
         path:'sobre',
         component:SobrePageComponent,

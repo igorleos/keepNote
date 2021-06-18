@@ -19,6 +19,7 @@ import { CardComponent } from './components/card/card.component';
 import { NotesComponent } from './components/notes/notes.component';
 import { SobrePageComponent } from './components/sobre-page/sobre-page.component';
 import { NotePageComponent } from './components/note-page/note-page.component';
+import { FooterMenuTemplateComponent } from './components/footer-menu-template/footer-menu-template.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { NotePageComponent } from './components/note-page/note-page.component';
     CardComponent,
     NotesComponent,
     SobrePageComponent,
-    NotePageComponent
+    NotePageComponent,
+    FooterMenuTemplateComponent
 
   ],
   imports: [
