@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { NoteListControlService } from 'src/app/services/note-list-control.service';
 import { NotesModel } from '../notes-model';
 
 @Component({
@@ -16,13 +17,13 @@ export class NotesComponent implements OnInit {
 
 
 
-  constructor() {
+  constructor(public notesService:NoteListControlService) {
   }
 
   ngOnInit(): void {
   }
   passingNote(note:NotesModel):void {
-    console.log(note);
+    this.notesService.send(note);
   }
 
 }
