@@ -18,6 +18,14 @@ export class HomePageComponent implements OnInit {
   ngOnInit(): void {
 
     this.listaDeNotas =this.notesService.listaDeNotas;
+    for (var count=0; count < this.listaDeNotas.length; count++ ){
+      if (this.listaDeNotas[count].content=='' && this.listaDeNotas[count].titulo==''){
+        this.listaDeNotas.splice(count,1);
+
+
+        }
+    }
+
 
 
   }

@@ -38,6 +38,8 @@ export class NotePageComponent implements OnInit {
       this.index=this.listaDeNotas.length
       this.listaDeNotas.push(this.newNote);
 
+      
+
     }
 
 
