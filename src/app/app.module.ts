@@ -22,6 +22,7 @@ import { SobrePageComponent } from './components/sobre-page/sobre-page.component
 import { NotePageComponent } from './components/note-page/note-page.component';
 import { FooterMenuTemplateComponent } from './components/footer-menu-template/footer-menu-template.component';
 import {MatDividerModule} from '@angular/material/divider';
+import { NotesFooterComponent } from './components/notes-footer/notes-footer.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import {MatDividerModule} from '@angular/material/divider';
     NotesComponent,
     SobrePageComponent,
     NotePageComponent,
-    FooterMenuTemplateComponent
+    FooterMenuTemplateComponent,
+    NotesFooterComponent
 
   ],
   imports: [

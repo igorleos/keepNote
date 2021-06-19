@@ -1,6 +1,6 @@
 <div class="mae">
 
-  <div *ngFor="let item of listaDeNotas;let index=index ">
+  <div  *ngFor="let item of listaDeNotas;let index=index ">
     <app-notes *ngIf="index%2==0" [index]="index" [notes]="item" >  </app-notes>
   </div>
 

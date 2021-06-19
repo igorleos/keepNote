@@ -14,8 +14,8 @@ export class NoteListControlService {
     let nota1: NotesModel= new NotesModel;
 
 
-    nota1.titulo='Nota 01';
-    nota1.content='Eu quero testar essa nota q é impar nota 01'
+    nota1.titulo='Lorem';
+    nota1.content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel enim quis nulla mattis hendrerit eget eget lacus. Vivamus ac faucibus erat, vel ultricies mi. Donec eu dictum neque. Sed pretium orci sem, et porta urna lobortis efficitur. Mauris bibendum massa augue, ut dignissim enim egestas vel. '
     nota1.flags[0]='notaTeste1';
 
     this.listaDeNotas.push(nota1);
