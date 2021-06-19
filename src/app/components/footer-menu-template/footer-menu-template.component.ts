@@ -8,7 +8,8 @@ import { NotesModel } from '../notes-model';
   styleUrls: ['./footer-menu-template.component.css']
 })
 export class FooterMenuTemplateComponent implements OnInit {
-  @Input() public notes: NotesModel = new NotesModel();
+
+  @Input() public index:number|undefined;
   public listaDeNotas: NotesModel[]|undefined;
 
 
@@ -25,6 +26,9 @@ export class FooterMenuTemplateComponent implements OnInit {
   }
   passingNote(note:NotesModel):void {
     this.notesService.send(note);
+  }
+  passingIndex(index:number|undefined):void {
+    this.notesService.sendIndex(index);
   }
 
 

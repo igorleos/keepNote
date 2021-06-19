@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {MatCardModule} from '@angular/material/card';
 import {MatChipsModule} from '@angular/material/chips';
+import {FormsModule} from '@angular/forms';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -20,6 +21,8 @@ import { NotesComponent } from './components/notes/notes.component';
 import { SobrePageComponent } from './components/sobre-page/sobre-page.component';
 import { NotePageComponent } from './components/note-page/note-page.component';
 import { FooterMenuTemplateComponent } from './components/footer-menu-template/footer-menu-template.component';
+import {MatDividerModule} from '@angular/material/divider';
+
 
 @NgModule({
   declarations: [
@@ -44,7 +47,9 @@ import { FooterMenuTemplateComponent } from './components/footer-menu-template/f
     MatIconModule,
     MatListModule,
     MatCardModule,
-    MatChipsModule
+    MatChipsModule,
+    FormsModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,6 @@
-<mat-toolbar color="primary">
+<mat-toolbar color="primary"
+
+>
 
 
   <div class="footerset">
@@ -6,25 +8,25 @@
       <button
       type="button"
       mat-icon-button
-      (click)="passingNote(notes)">
+      >
       <mat-icon aria-label="Side nav toggle icon">check_box</mat-icon>
     </button>
     <button
       type="button"
       mat-icon-button
-      (click)="passingNote(notes)">
+      >
       <mat-icon aria-label="Side nav toggle icon">brush</mat-icon>
     </button>
     <button
       type="button"
       mat-icon-button
-      (click)="passingNote(notes)">
+      >
       <mat-icon aria-label="Side nav toggle icon">add_photo_alternate</mat-icon>
     </button>
     <button
       type="button"
       mat-icon-button
-      (click)="passingNote(notes)">
+      >
       <mat-icon aria-label="Side nav toggle icon">star_border</mat-icon>
     </button>
 
@@ -37,7 +39,8 @@
       class="addButton"
       type="button"
       mat-icon-button
-      (click)="passingNote(notes)">
+      routerLink='/notePage'
+      (click)="passingIndex(index)">
       <mat-icon aria-label="Side nav toggle icon">add_circle</mat-icon>
     </button>
 </mat-toolbar>

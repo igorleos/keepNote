@@ -1,5 +1,6 @@
 <div>
-  <input class="titulo" matInput placeholder="Título" [value]="listaDeNotas[index]?.titulo">
-  <input class="titulo" matInput placeholder="Nota" [value]="listaDeNotas[index]?.content">
+  <input class="titulo" matInput placeholder="Título" [(ngModel)]="listaDeNotas[index].titulo">
+
+  <input class="content" matInput placeholder="Nota" [(ngModel)]="listaDeNotas[index].content">
 
 </div>
